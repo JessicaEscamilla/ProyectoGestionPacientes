@@ -1,0 +1,58 @@
+/*  Colores Generales para el proyecto
+    Color zul: rgb(10,74,110)
+    Color verde: color: rgb(84,121,114)*/
+
+@import "bootstrap";
+
+body{
+    background-color: rgb(254,254,251);
+    color: rgb(10,74,110) !important;
+    font-size: large !important;
+}
+
+
+.card {
+    color: rgb(84,121,114) !important;
+}
+
+.border-card {
+    border: 1px solid rgb(84,121,114) !important;
+}
+
+.card-btn {
+    color: #fff !important;
+    background-color: rgb(84,121,114) !important;
+    border-color: rgb(84,121,114) !important;
+    
+}
+
+.card-btn:hover {
+    background-color: rgb(56,82,77) !important;
+    border-color: rgb(56,82,77) !important;
+}
+
+.font-green{
+    color: rgb(84,121,114) !important;
+}
+
+.img-text{
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.text-in-img{
+    position: absolute;
+    right: -65%;
+    bottom: 5.25rem;
+    left: 75%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+}
+
+.bg-blue{
+    background-color: rgb(10,74,110) !important;
+}
+
