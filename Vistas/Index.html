@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gestion de pacientes</title>
     <link rel="stylesheet" href="css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </head>
 <body>
     <h1 class="text-center py-3">GESTIÓN DE PACIENTES</h1>
@@ -19,16 +19,20 @@
           </button>
           <div class="collapse navbar-collapse text-center" id="navbarsExample11">
               <ul class="navbar-nav">
-                  <li class="nav-item active">
-                      <a class="nav-link" href="#">Consultas</a>
-                  </li>
-                  <li class="nav-item">
+                  <li class="nav-item" id="ModuloPacientes">
                       <a class="nav-link" href="#">Pacientes</a>
                   </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">Medicos</a>
+                  <li class="nav-item dropdown" id="ModuloMedicos">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Medicos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="ConsultarPacientes.html">Gestionar citas - pacientes</a></li>
+                      <li><a class="dropdown-item" href="#">Consultar historial clinico</a></li>
+                      <li><a class="dropdown-item" href="#">Crear o modificar comentarios</a></li>
+                    </ul>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item" id="ModuloAdmin">
                       <a class="nav-link" href="#">Administradores</a>
                   </li>
                   <li class="nav-item">
@@ -81,7 +85,7 @@
                       <div class="card-body">
                         <h5 class="card-title">Agendar una nueva cita medica</h5>
                         <p class="card-text">Puedes agendar citas medicas con cualquiera de los medicos disponibles.</p>
-                        <a href="#" class="btn card-btn">Agendar</a>
+                        <a href="#" class="btn btn-green">Agendar</a>
                       </div>
                     </div>
               </div>
@@ -91,7 +95,7 @@
                       <div class="card-body">
                         <h5 class="card-title">Ver comentarios de mis citas medicas</h5>
                         <p class="card-text">Puedes revisar los comentarios colocados en tu citas medicas por tu medico tratante.</p>
-                        <a href="#" class="btn card-btn">Ver</a>
+                        <a href="#" class="btn btn-green">Ver</a>
                       </div>
                     </div>
               </div>
@@ -101,7 +105,7 @@
                       <div class="card-body">
                         <h5 class="card-title">Calificar una cita medica</h5>
                         <p class="card-text">Puedes asignarle una calificación a cualquiera de las citas que has tenido.</p>
-                        <a href="#" class="btn card-btn">Calificar</a>
+                        <a href="#" class="btn btn-green">Calificar</a>
                       </div>
                   </div>
               </div>

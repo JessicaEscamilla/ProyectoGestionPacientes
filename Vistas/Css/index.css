@@ -19,14 +19,14 @@ body{
     border: 1px solid rgb(84,121,114) !important;
 }
 
-.card-btn {
+.btn-green {
     color: #fff !important;
     background-color: rgb(84,121,114) !important;
     border-color: rgb(84,121,114) !important;
     
 }
 
-.card-btn:hover {
+.btn-green:hover {
     background-color: rgb(56,82,77) !important;
     border-color: rgb(56,82,77) !important;
 }
@@ -56,3 +56,19 @@ body{
     background-color: rgb(10,74,110) !important;
 }
 
+.table-green {
+    --bs-table-striped-bg: rgb(219, 235, 232) !important;
+    color: var(--bs-table-color);
+    border-color: var(--bs-table-border-color);
+}
+
+.btn-blue {
+    color: #fff !important;
+    background-color: rgb(40,99,132) !important;
+    border-color: rgb(40,99,132) !important;
+}
+
+.btn-blue:hover {
+    background-color: rgb(10,74,110) !important;
+    border-color: rgb(56,82,77) !important;
+}
