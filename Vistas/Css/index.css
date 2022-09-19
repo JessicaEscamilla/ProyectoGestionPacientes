@@ -9,7 +9,9 @@ body{
     color: rgb(10,74,110) !important;
     font-size: large !important;
 }
+form{
 
+}
 
 .card {
     color: rgb(84,121,114) !important;
@@ -71,4 +73,10 @@ body{
 .btn-blue:hover {
     background-color: rgb(10,74,110) !important;
     border-color: rgb(56,82,77) !important;
+}
+.btn-blue-aling {
+    color: #fff !important;
+    background-color: rgb(40,99,132) !important;
+    border-color: rgb(40,99,132) !important;
+    align:flex-end;
 }
