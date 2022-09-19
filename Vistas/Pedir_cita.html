@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</head>
+<style>
+
+.form-control input,
+        .form-control select{
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+
+.contenedor{
+            background-color: #fff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 40px;
+            box-shadow: 2px 5px 10px rgb(56,82,77);
+        }
+.agendar{
+    text-align: center;
+
+}
+form{
+    max-width:inherit;
+
+    width: 95%;
+
+}
+
+
+</style>
+
+<body>
+    
+    <h1 class="text-center py-3">GESTIÓN DE PACIENTES</h1>
+    <hr class="border border-2 opacity-75 w-75 mx-auto mb-0">
+    <nav class="navbar navbar-expand-sm navbar-light bg-body mb-5">
+      <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-center" id="navbarsExample11">
+              <ul class="navbar-nav">
+                  <li class="nav-item" id="ModuloPacientes">
+                      <a class="nav-link" href="#">Agendar cita</a>
+                  </li>
+                  <li class="nav-item" id="ModuloPacientes">
+                    <a class="nav-link" href="ConsultarHistorial.html">Consultar</a>
+                </li>
+                  <li class="nav-item" id="ModuloAdmin">
+                      <a class="nav-link" href="CalificarCita.html">Calificar cita</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="Index.html">Cerrar Sesion</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <h2 class="text-center"> Agendar citas</h2>
+    <div class="contenedor"> 
+
+            <form action="">
+              <div class="form-control mb-4">         
+            <label class="m-1" for="">Nombre :</label><br>
+            <input class="col-8 m-2" type="text" placeholder="Nombre paciente"  disabled><br>
+            <label class="m-1"for="">Numero de documento :</label><br>
+            <input class="col-8 m-2" type="text" placeholder="Numero de documento"  disabled><br>
+        </div> 
+        <div class="form-control">
+            <label class="m-1" for="">Especialidad:</label><br>
+            <select name="Especialidad" id="" class="col-8 m-2" >
+                <option selected>Seleccione una especialidad</option>
+                <option value="">Medicina general</option>
+                <option value="">Laboratorio</option>
+                <option value="">Vacunacion</option>
+            </select><br>
+            <label class="m-1" for="">Medico:</label><br>
+        <!-- <input type="text" name="Medico" id=""><br>-->
+            <select name="Medico" id="" class="col-8 m-2">
+                <option selected>Seleccione un medico</option>
+                <option value="">Pablo Perez</option>
+                <option value="">Maria Gonzalez</option>
+                <option value="">Andrea Sanchez</option>
+            </select><br>
+            <label class="m-1" for="">Fecha de cita:</label><br>
+            <input type="date" class="col-8 m-2" name="" id="" min="2022-09-18" max="2022-11-18"><br>
+            <label class="m-1" for="">Hora de la cita:</label><br>
+            <select name="Hora_de_cita" id="" class="col-8 m-2" >
+                <option selected>Seleccione la hora de la cita</option>
+                <option>8:00</option>
+                <option>8:20</option> 
+                <option>8:40</option>
+            </div>
+
+            </select><br>
+            <div class="agendar">
+            <input type="button" class="btn btn-blue m-auto" value="Agendar cita" >
+        </div>    
+        </form>
+        
+        
+        
+    
+    </div>
+</body>
+</html>
