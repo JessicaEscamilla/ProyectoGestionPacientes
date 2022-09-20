@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>consultar usuarios</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 class="text-center py-3">Clínica  San  Martín</h1>  
+    <hr class="border border-2 opacity-75 w-75 mx-auto mb-0">
+    <nav class="navbar navbar-expand-sm navbar-light bg-body mb-5">
+      <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-center" id="navbarsExample11">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="RegistrarMedicoPaciente.html">Crear Medico / Administrador</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ConsultarUsuarios.html">Consultar / modificar datos usuarios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ArchivarHistoriales.html">Archivar / desarchivar historiales</a>
+                </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="Acceso.html">Cerrar Sesion</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+    <div class="container mt-4"> 
+        <h2>Usuarios</h2>
+        <div>
+            <table class="table table-striped table-green align-middle">
+                <thead>
+                  <tr>
+                    <th scope="col">Id Usuario</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Rol</th>
+                    <th scope="col">Editar Usuario</th>
+                    <th scope="col">Eliminar Usuario</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark Ottro</td>
+                    <td>Paciente</td>
+                    <td><button class="btn btn-blue" data-bs-toggle="modal" data-bs-target="#pacienteModal"> Editar datos</button></td>
+                    <td><button class="btn btn-green"> Eliminar</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob Thornton</td>
+                    <td>Paciente</td>
+                    <td><button class="btn btn-blue" data-bs-toggle="modal" data-bs-target="#pacienteModal"> Editar datos</button></td>
+                    <td><button class="btn btn-green"> Eliminar</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry the Bird</td>
+                    <td>Administrador</td>
+                    <td><button class="btn btn-blue" data-bs-toggle="modal" data-bs-target="#adminModal"> Editar datos</button></td>
+                    <td><button class="btn btn-green"> Eliminar</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Richard Smith</td>
+                    <td>Medico</td>
+                    <td><button class="btn btn-blue" data-bs-toggle="modal" data-bs-target="#medicoModal"> Editar datos</button></td>
+                    <td><button class="btn btn-green"> Eliminar</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Edmond Williams</td>
+                    <td>Medico</td>
+                    <td><button class="btn btn-blue" data-bs-toggle="modal" data-bs-target="#medicoModal"> Editar datos</button></td>
+                    <td><button class="btn btn-green"> Eliminar</button></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+    <!-- Modal Paciente-->
+    <div class="modal fade" id="pacienteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Editar datos paciente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form role="form" method="post" action="#">   
+                        <div class="form-group">
+                            <fieldset>
+                                <label for="id">Id</label>
+                                    <input type="text" class="form-control" name="txtId" id="id"
+                                    value="1" disabled>
+                                <label for="nombre">Nombre</label>
+                                    <input type="text" class="form-control" name="txtNombre" id="nombre"
+                                    placeholder="Su nombre">
+                                <label for="apellido" >Apellido</label>
+                                    <input type="text" name="txtApellido" class="form-control" id="apellido"
+                                    placeholder="Sus apellidos">
+                                <label for="cedula" >Identificacion</label>
+                                    <input type="text" name="txtCedula" class="form-control" id="cedula"
+                                    placeholder="Su numero de identificacion">
+                                
+                                <label for="txtEps" >EPS</label>
+                                <select class="form-select" name="txtEps">
+                                    <option value="">Seleccione su EPS...</option>
+                                    <option value="San">EPS SANITAS</option>
+                                    <option value="SalTot">SALUD TOTAL EPS S.A.</option>
+                                    <option value="Nva">NUEVA EPS </option>
+                                    <option value="Fam">FAMISANAR </option>
+                                    <option value="Sura">EPS SURA</option>
+                                </select>    
+                                <hr>
+                            
+                                <label for="usuario" >Usuario</label>
+                                    <input type="email" name="txtUsuario" class="form-control" id="usuario"
+                                    value="prueba@prueba.com.co" disabled>
+                                <label for="contrasena" >Contraseña</label>
+                                    <input type="password" name="txtContrasena" class="form-control" id="contrasena"
+                                    value="contrasena" disabled>
+                            </fieldset>
+                            
+                        </div>
+                    </form>  
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Paciente-->
+    <div class="modal fade" id="medicoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Editar datos médico</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form role="form" method="post" action="#">      
+                        <div class="form-group">
+                            <fieldset>
+                                <label for="">Id</label>
+                                    <input type="text" class="form-control" name="txtId" id="id"
+                                    value="4" disabled>
+                                <label for="">Nombre</label>
+                                    <input type="text" class="form-control" name="txtNombre" id="nombre"
+                                    placeholder="Su nombre">
+                                <label for="" >Apellido</label>
+                                    <input type="text" name="txtApellido" class="form-control" id="apellido"
+                                    placeholder="Sus apellidos">
+                                <label for="" >Identificacion</label>
+                                    <input type="text" name="txtCedula" class="form-control" id="cedula"
+                                    placeholder="Su numero de identificacion">
+                                <label for="" >Límite de pacientes al día</label>
+                                    <input type="text" name="txtLimite" class="form-control" id="limite"
+                                    placeholder="limite de pacientes del medico">
+                                <hr>
+                                <label for="usuario" >Usuario</label>
+                                    <input type="email" name="txtUsuario" class="form-control" id="usuario"
+                                    value="prueba@prueba.com.co" disabled>
+                                <label for="contrasena" >Contraseña</label>
+                                    <input type="password" name="txtContrasena" class="form-control" id="contrasena"
+                                    value="contrasena" disabled>
+                            </fieldset>
+                            
+                        </div>
+                    </form>  
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Admin-->
+    <div class="modal fade" id="adminModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Editar datos administrador</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form role="form" method="post" action="#">      
+                        <div class="form-group">
+                            <fieldset>
+                                <label for="">Id</label>
+                                    <input type="text" class="form-control" name="txtId" id="id"
+                                    value="3" disabled>
+                                <label for="">Nombre</label>
+                                    <input type="text" class="form-control" name="txtNombre" id="nombre"
+                                    placeholder="Su nombre">
+                                <label for="" >Apellido</label>
+                                    <input type="text" name="txtApellido" class="form-control" id="apellido"
+                                    placeholder="Sus apellidos">
+                                <label for="" >Identificacion</label>
+                                    <input type="text" name="txtCedula" class="form-control" id="cedula"
+                                    placeholder="Su numero de identificacion">
+                                <hr>
+                                <label for="usuario" >Usuario</label>
+                                    <input type="email" name="txtUsuario" class="form-control" id="usuario"
+                                    value="prueba@prueba.com.co" disabled>
+                                <label for="contrasena" >Contraseña</label>
+                                    <input type="password" name="txtContrasena" class="form-control" id="contrasena"
+                                    value="contrasena" disabled>
+                            </fieldset>
+                        </div>
+                    </form>  
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

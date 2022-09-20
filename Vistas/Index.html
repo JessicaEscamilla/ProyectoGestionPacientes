@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <h1 class="text-center py-3">C l í n i c a  S a n  M a r t í n</h1>  
+    <h1 class="text-center py-3">Clínica  San  Martín</h1>  
     
     <hr class="border border-2 opacity-75 w-75 mx-auto mb-0">
     
@@ -25,9 +25,16 @@
           </button>
           <div class="collapse navbar-collapse text-center" id="navbarsExample11">
               <ul class="navbar-nav">
-                  <li class="nav-item" id="ModuloPacientes">
-                      <a class="nav-link" href="#">Pacientes</a>
-                  </li>
+                <li class="nav-item dropdown" id="ModuloMedicos">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pacientes
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="ConsultarHistorial.html">Ver comentarios</a></li>
+                    <li><a class="dropdown-item" href="Pedir_cita.html">Agendar cita</a></li>
+                    <li><a class="dropdown-item" href="CalificarCita.html">Calificar cita</a></li>
+                  </ul>
+                </li>
                   <li class="nav-item dropdown" id="ModuloMedicos">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Medicos
@@ -38,12 +45,20 @@
                       <li><a class="dropdown-item" href="#">Crear o modificar comentarios</a></li>
                     </ul>
                   </li>
-                  <li class="nav-item" id="ModuloAdmin">
-                      <a class="nav-link" href="#">Administradores</a>
+                </li>
+                <li class="nav-item dropdown" id="ModuloMedicos">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Administrador
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="RegistrarMedicoPaciente.html">Crear Medico / Administrador</a></li>
+                    <li><a class="dropdown-item" href="ConsultarUsuarios.html">Consultar / modificar datos usuarios</a></li>
+                    <li><a class="dropdown-item" href="ArchivarHistoriales.html">Archivar / desarchivar historiales</a></li>
+                  </ul>
+                </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="Acceso.html">Cerrar Sesion</a>
                   </li>
-                  <!-- <li class="nav-item">
-                      <a class="nav-link" href="#">Cerrar Sesion</a>
-                  </li> -->
               </ul>
           </div>
       </div>

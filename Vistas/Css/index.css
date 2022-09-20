@@ -17,8 +17,17 @@ form{
     color: rgb(84,121,114) !important;
 }
 
+.card-blue {
+    color: rgb(10,74,110) !important;
+}
+
 .border-card {
     border: 1px solid rgb(84,121,114) !important;
+}
+
+
+.border-card-blue {
+    border: 1px solid rgb(10,74,110) !important;
 }
 
 .btn-green {
@@ -79,4 +88,8 @@ form{
     background-color: rgb(40,99,132) !important;
     border-color: rgb(40,99,132) !important;
     align:flex-end;
+}
+
+label{
+    margin-top: 10px;
 }
