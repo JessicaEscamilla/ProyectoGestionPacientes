@@ -13,8 +13,7 @@
 
 
 <body>
-    
-    <h1 class="text-center py-3">GESTIÓN DE PACIENTES</h1>
+    <h1 class="text-center py-3"><a href="Index.html" class="text-decoration-none text-blue">Clínica  San  Martín</a> </h1> 
     <hr class="border border-2 opacity-75 w-75 mx-auto mb-0">
     <nav class="navbar navbar-expand-sm navbar-light bg-body mb-5">
       <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
@@ -24,7 +23,7 @@
           <div class="collapse navbar-collapse text-center" id="navbarsExample11">
               <ul class="navbar-nav">
                   <li class="nav-item" id="ModuloPacientes">
-                      <a class="nav-link" href="#">Agendar cita</a>
+                      <a class="nav-link" href="Pedir_cita.html">Agendar cita</a>
                   </li>
                   <li class="nav-item" id="ModuloPacientes">
                     <a class="nav-link" href="ConsultarHistorial.html">Consultar</a>
@@ -33,57 +32,61 @@
                       <a class="nav-link" href="CalificarCita.html">Calificar cita</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="Index.html">Cerrar Sesion</a>
+                      <a class="nav-link" href="Acceso.html">Cerrar Sesion</a>
                   </li>
               </ul>
           </div>
       </div>
   </nav>
 
-  <h2 class="text-center"> Agendar citas</h2>
-    <div class="contenedor"> 
-
-            <form action="">
-              <div class="form-control mb-4">         
-            <label class="m-1" for="">Nombre :</label><br>
-            <input class="col-8 m-2" type="text" placeholder="Nombre paciente"  disabled><br>
-            <label class="m-1"for="">Numero de documento :</label><br>
-            <input class="col-8 m-2" type="text" placeholder="Numero de documento"  disabled><br>
-        </div> 
-        <div class="form-control">
-            <label class="m-1" for="">Especialidad:</label><br>
-            <input class="col-8 m-2" type="text" placeholder="Medicina general"  disabled><br>           
-<!--             <select name="Especialidad" id="" class="col-8 m-2" >
-                <option selected>Seleccione una especialidad</option>
-                <option value="">Medicina general</option>
-                <option value="">Laboratorio</option>
-                <option value="">Vacunacion</option>
-            </select><br> -->
-            <label class="m-1" for="">Medico:</label><br>
-            <select name="Medico" id="" class="col-8 m-2">
-                <option selected>Seleccione un medico</option>
-                <option value="">Pablo Perez</option>
-                <option value="">Maria Gonzalez</option>
-                <option value="">Andrea Sanchez</option>
-            </select><br>
-            <label class="m-1" for="">Fecha de cita:</label><br>
-            <input type="date" class="col-8 m-2" name="" id="" min="2022-09-18" max="2022-11-18"><br>
-            <label class="m-1" for="">Hora de la cita:</label><br>
-            <select name="Hora_de_cita" id="" class="col-8 m-2" >
-                <option selected>Seleccione la hora de la cita</option>
-                <option>8:00</option>
-                <option>8:20</option> 
-                <option>8:40</option>
+    <h2 class="text-center"> Agendar citas</h2>
+    <div class="contenedor mt-5"> 
+        <form action="">
+            <div class="form-control mb-4">         
+                <label class="m-1" for="">Nombre :</label><br>
+                <input class="col-8 m-2" type="text" placeholder="Nombre paciente"  disabled><br>
+                <label class="m-1"for="">Numero de documento :</label><br>
+                <input class="col-8 m-2" type="text" placeholder="Numero de documento"  disabled><br>
+            </div> 
+            <div class="form-control">
+                <label class="m-1" for="">Especialidad:</label><br>
+                <input class="col-8 m-2" type="text" placeholder="Medicina general"  disabled><br>           
+    <!--             <select name="Especialidad" id="" class="col-8 m-2" >
+                    <option selected>Seleccione una especialidad</option>
+                    <option value="">Medicina general</option>
+                    <option value="">Laboratorio</option>
+                    <option value="">Vacunacion</option>
+                </select><br> -->
+                <label class="m-1" for="">Medico:</label><br>
+                <select name="Medico" id="" class="col-8 m-2">
+                    <option selected>Seleccione un medico</option>
+                    <option value="">Pablo Perez</option>
+                    <option value="">Maria Gonzalez</option>
+                    <option value="">Andrea Sanchez</option>
+                </select><br>
+                <label class="m-1" for="">Fecha de cita:</label><br>
+                <input type="date" class="col-8 m-2" name="" id="" min="2022-09-18" max="2022-11-18"><br>
+                <label class="m-1" for="">Hora de la cita:</label><br>
+                <select name="Hora_de_cita" id="" class="col-8 m-2" >
+                    <option selected>Seleccione la hora de la cita</option>
+                    <option>8:00</option>
+                    <option>8:20</option> 
+                    <option>8:40</option>
+                </select><br>
             </div>
-
-            </select><br>
-            <div class="agendar">
-            <input type="button" class="btn btn-blue col-6 mx-auto" value="Agendar cita" >
-        </div>    
+            <div class="agendar mt-3">
+                <input type="button" class="btn btn-blue col-6 mx-auto" value="Agendar cita" >
+            </div>    
         </form>
-        
-               
     
     </div>
+    <footer class="bg-secondary bg-gradient text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3 text-white">
+          © 2022 Copyright:
+          <label>Gestión de pacientes</label>
+        </div>
+        <!-- Copyright -->
+      </footer>
 </body>
 </html>
