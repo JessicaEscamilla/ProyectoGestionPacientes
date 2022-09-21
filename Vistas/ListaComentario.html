@@ -18,7 +18,7 @@
         </div>
     </nav>
     <div class="container mt-4"> 
-        <h2>Historial</h2>
+        <h2>Historial del Paciente</h2> 
         <div>
             <table class="table table-striped table-green align-middle">
                 <thead>
@@ -26,6 +26,7 @@
                     <th scope="col">Fecha actual</th>
                     <th scope="col">Paciente</th>
                     <th scope="col">Fecha Comentario</th>
+                    <th scope="col">Medico que Valora</th>
                     <th scope="col">Comentario</th>
                   </tr>
                 </thead>
@@ -41,10 +42,45 @@
                     </th>
                     <td>Mark Ottro</td>
                     <td>16-09-2022</td>
+                    <td>Juan Carlos Redondo</td>
                     <td>Paciente ingresa a las 15 horas sin acompañante y conciente <br>
                         se valora y presenta presion normal, temperatura normal <br>
                          con un cuadro de gripa, pero pulmones descongestionados.<br> 
                          Se receta con formula medica para tratamiento ambulatorio.</td>
+                  </tr>
+                  <tr>
+                    <th>
+                    <div class="date">
+                        <script>
+                            var f = new Date();
+                            document.write(f.getDate() + "/" + (f.getMonth()+1) + "/" + f.getFullYear());
+                        </script>
+                    </div>
+                    </th>
+                    <td>Mark Ottro</td>
+                    <td>25-02-2022</td>
+                    <td>Camilo Medina Burgos</td>
+                    <td>El paciente ingresa siendo las 9 am conciente y dice presentar <br>
+                        dolor lumbar, se valora presentando presion normal, temperatura normal <br>
+                         peso 80.6 kg, estatura 1.75. De acuerdo a su trabajo es probable la causa del dolor.<br> 
+                         Se receta con formula medica para tratamiento ambulatorio.</td>
+                  </tr>
+                  <tr>
+                    <th>
+                    <div class="date">
+                        <script>
+                            var f = new Date();
+                            document.write(f.getDate() + "/" + (f.getMonth()+1) + "/" + f.getFullYear());
+                        </script>
+                    </div>
+                    </th>
+                    <td>Mark Ottro</td>
+                    <td>02-11-2021</td>
+                    <td>Luisa Brok Fiorillo</td>
+                    <td>Paciente ingresa a las 18 horas sin acompañante y conciente <br>
+                        se valora y presenta presion normal, temperatura normal <br>
+                         expresa tener fuerte dolor estomacal, vomito, diarrea desde hace 3 dias.<br> 
+                         Se receta con formula medica y se le autoriza examenes de laboratorio.</td>
                   </tr>
                 </tbody>
               </table>
