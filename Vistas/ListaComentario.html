@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListaComentario</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 class="text-center py-3">Clínica  San  Martín</h1>
+    <hr class="border border-2 opacity-75 w-75 mx-auto mb-0">
+    <nav class="navbar navbar-expand-sm navbar-light bg-body mb-5">
+        <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+            <a class="nav-link" href="ConsultarPacientes.html">Regresar</a>
+        </div>
+    </nav>
+    <div class="container mt-4"> 
+        <h2>Historial</h2>
+        <div>
+            <table class="table table-striped table-green align-middle">
+                <thead>
+                  <tr>
+                    <th scope="col">Fecha actual</th>
+                    <th scope="col">Paciente</th>
+                    <th scope="col">Fecha Comentario</th>
+                    <th scope="col">Comentario</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                  <tr>
+                    <th>
+                    <div class="date">
+                        <script>
+                            var f = new Date();
+                            document.write(f.getDate() + "/" + (f.getMonth()+1) + "/" + f.getFullYear());
+                        </script>
+                    </div>
+                    </th>
+                    <td>Mark Ottro</td>
+                    <td>16-09-2022</td>
+                    <td>Paciente ingresa a las 15 horas sin acompañante y conciente <br>
+                        se valora y presenta presion normal, temperatura normal <br>
+                         con un cuadro de gripa, pero pulmones descongestionados.<br> 
+                         Se receta con formula medica para tratamiento ambulatorio.</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</body>
+</html>
