@@ -8,39 +8,9 @@
     <link rel="stylesheet" href="css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/Pedircita.css">
 </head>
-<style>
 
-.form-control input,
-        .form-control select{
-            border: 1px solid #777;
-            border-radius: 2px;
-            font-family: inherit;
-            padding: 10px;
-            display: block;
-            width: 95%;
-        }
-
-.contenedor{
-            background-color: #fff;
-            max-width: 500px;
-            margin: 50px auto;
-            padding: 30px 40px;
-            box-shadow: 2px 5px 10px rgb(56,82,77);
-        }
-.agendar{
-    text-align: center;
-
-}
-form{
-    max-width:inherit;
-
-    width: 95%;
-
-}
-
-
-</style>
 
 <body>
     
@@ -82,14 +52,14 @@ form{
         </div> 
         <div class="form-control">
             <label class="m-1" for="">Especialidad:</label><br>
-            <select name="Especialidad" id="" class="col-8 m-2" >
+            <input class="col-8 m-2" type="text" placeholder="Medicina general"  disabled><br>           
+<!--             <select name="Especialidad" id="" class="col-8 m-2" >
                 <option selected>Seleccione una especialidad</option>
                 <option value="">Medicina general</option>
                 <option value="">Laboratorio</option>
                 <option value="">Vacunacion</option>
-            </select><br>
+            </select><br> -->
             <label class="m-1" for="">Medico:</label><br>
-        <!-- <input type="text" name="Medico" id=""><br>-->
             <select name="Medico" id="" class="col-8 m-2">
                 <option selected>Seleccione un medico</option>
                 <option value="">Pablo Perez</option>
@@ -108,12 +78,11 @@ form{
 
             </select><br>
             <div class="agendar">
-            <input type="button" class="btn btn-blue m-auto" value="Agendar cita" >
+            <input type="button" class="btn btn-blue col-6 mx-auto" value="Agendar cita" >
         </div>    
         </form>
         
-        
-        
+               
     
     </div>
 </body>
