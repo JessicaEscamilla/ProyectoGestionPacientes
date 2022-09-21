@@ -9,7 +9,7 @@ body{
     color: rgb(10,74,110) !important;
     font-size: large !important;
 }
-form{
+.formsombra{box-shadow: 2px 5px 10px rgb(56,82,77);
 
 }
 
