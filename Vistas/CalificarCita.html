@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificar Cita</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/CalificarCita.css">
+ 
+</head>
+<body>
+    <h1 class="text-center py-3"><a href="Index.html" class="text-decoration-none text-blue">Clínica  San  Martín</a> </h1> 
+    <hr class="border border-2 opacity-75 w-75 mx-auto mb-0">
+    <nav class="navbar navbar-expand-sm navbar-light bg-body mb-5">
+        <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarsExample11">
+                <ul class="navbar-nav">
+                    <li class="nav-item" id="ModuloPacientes">
+                        <a class="nav-link" href="Pedir_cita.html">Agendar cita</a>
+                    </li>
+                    <li class="nav-item" id="ModuloPacientes">
+                      <a class="nav-link" href="ConsultarHistorial.html">Consultar</a>
+                  </li>
+                    <li class="nav-item" id="ModuloAdmin">
+                        <a class="nav-link" href="CalificarCita.html">Calificar cita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Acceso.html">Cerrar Sesion</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <form id="formCalificacion">
+        <div class="formImag">
+            <img src="img/CalificarCita1.jpg"  height="300">
+        </div>
+        <div class="form-control">
+            <label for="Nombre" id="label-nombre"> Nombre </label>
+            <input type="text" id="Nombre" placeholder="Ingrese su nombre" />
+        </div>
+
+        <div class="form-control">
+            <label for="fechacita" id="label-fechacita"> Fecha de la Cita </label>
+            <input type="date" id="fechacita"/>
+        </div>
+
+        <div class="form-control">
+        <label for="Medico" id="Label-medico">Médico:</label>
+            <select name="Medico" id="" class="col-8 m-2">
+                <option selected>Seleccione un médico</option>
+                <option value="">Pablo Perez</option>
+                <option value="">Maria Gonzalez</option>
+                <option value="">Andrea Sanchez</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label>¿Tuvo algún problema para agendar la cita? </label>
+            <label for="inp-1">  <input type="radio" name="inp"> Si</input></label>
+            <label for="inp-2"> <input type="radio" name="inp"> No</input></label>
+            <label for="Cual" id="label-nombre"> ¿Qué problema tuvo? </label>
+                <input type="text" id="Cual" placeholder="En caso de tener algún problema, indique cuál fue" />
+        </div>
+
+        <div class="form-control">
+            <label for="pta" id="label-role"> ¿Cómo puntuaría la atención de nuestro personal durante todo el proceso?
+                <small>(Siendo 5 la puntuación más alta y 1 la más baja)</small>
+            </label>
+            <label for="pta-1"><input type="radio" name="pta"> 5</input></label>
+            <label for="pta-2"> <input type="radio" name="pta"> 4</input></label>
+            <label for="pta-3"> <input type="radio" name="pta"> 3</input></label>
+            <label for="pta-5"> <input type="radio" name="pta"> 2</input></label>
+            <label for="pta-5"> <input type="radio" name="pta"> 1</input></label>
+        </div>
+  
+        <div class="form-control">
+            <label></label>Basándose en su experiencia completa con nuestro centro de atención médica, ¿qué probabilidad existe que nos recomiende con un amigo o colega?</label>
+            <label for="recomendacion-1">
+                <input type="radio" id="recomendacion-1" name="recomendacion"> Si</input>
+            </label>
+            <label for="recomendacion-2">
+                <input type="radio" id="recomendacion-2" name="recomendacion"> No</input>
+            </label>
+            <label for="recomendacion-3">
+                <input type="radio"id="recomendacion-3" name="recomendacion"> Tal vez</input>
+            </label>
+        </div>
+    
+        <div class="form-control">
+            <label for="comentario"> Algún comentario o sugerencia </label>
+            <textarea name="comentario" id="comentario" placeholder="Ingrese su comentario aqui"></textarea>
+        </div>
+        <button type="submit" value="enviar"onclick="alert('Calificación enviada')">Enviar</button>
+    </form>    
+    <footer class="bg-secondary bg-gradient text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3 text-white">
+          © 2022 Copyright:
+          <label>Gestión de pacientes</label>
+        </div>
+        <!-- Copyright -->
+      </footer>
+</body>
+
+</html>

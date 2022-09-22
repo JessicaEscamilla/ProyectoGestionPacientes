@@ -1,14 +1,168 @@
 <!--Pagina principal de proyecto-->
 <!--Pagina principal de proyecto-->
+<!--Pagina principal de proyecto-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Gestion de pacientes/home</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <h1>Hola Mundo!</h1>
+    <h1 class="text-center py-3">Clínica  San  Martín</h1>  
+    
+    <hr class="border border-2 opacity-75 w-75 mx-auto mb-0">
+    <!-- barra de navegabilidad  -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-body mb-5">
+      <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-center" id="navbarsExample11">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown" id="ModuloMedicos">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pacientes
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="ConsultarHistorial.html">Ver comentarios</a></li>
+                    <li><a class="dropdown-item" href="Pedir_cita.html">Agendar cita</a></li>
+                    <li><a class="dropdown-item" href="CalificarCita.html">Calificar cita</a></li>
+                  </ul>
+                </li>
+                  <li class="nav-item dropdown" id="ModuloMedicos">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Medicos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="ConsultarPacientes.html">Gestionar citas - pacientes</a></li>
+                      <li><a class="dropdown-item" href="ListaComentario.html">Consultar historial clinico</a></li>
+                      <li><a class="dropdown-item" href="VerCrearCambiarComentario.html">Crear o modificar comentarios</a></li>
+                    </ul>
+                  </li>
+                </li>
+                <li class="nav-item dropdown" id="ModuloMedicos">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Administrador
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="RegistrarMedicoPaciente.html">Crear Medico / Administrador</a></li>
+                    <li><a class="dropdown-item" href="ConsultarUsuarios.html">Consultar / modificar datos usuarios</a></li>
+                    <li><a class="dropdown-item" href="ArchivarHistoriales.html">Archivar / desarchivar historiales</a></li>
+                  </ul>
+                </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="Acceso.html">Cerrar Sesion</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+
+    <!-- carrusel  </li> -->
+
+    <div class="container mb-4">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/imgCarrousel02.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block bg-opacity-50 bg-dark">
+                <!-- <h5>Nuestro enfoque</h5> -->
+                <h5 class="text-center py-3"> Atención médica en la que tu puedes confiar<h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/imgCarrousel03.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block bg-opacity-50 bg-dark">
+                <h5>Nuestro enfoque</h5>
+                <p>Atención médica en la que puede confiar</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/imgCarrousel01.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block bg-opacity-50 bg-dark">
+                <h5>Nuestro enfoque</h5>
+                <p>Atención médica en la que puede confiar</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div>
+          <h2 class="text-center my-5 font-green fw-bold">Nuestros servicio</h2>
+          <div class="row m-5"> 
+              <!--contenedor izquierda -->
+              <div class="col-4">
+                  <div class="card border-card">
+                      <img src="img/agendarCita.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Agendar una nueva cita medica</h5>
+                        <p class="card-text">Puedes agendar citas medicas con cualquiera de los medicos disponibles.</p>
+                        <a href="#" class="btn btn-green">Agendar</a>
+                      </div>
+                    </div>
+              </div>
+              <!--contenedor centro -->
+              <div class="col-4">
+                  <div class="card border-card">
+                      <img src="img/comentarios.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Ver comentarios de mis citas medicas</h5>
+                        <p class="card-text">Puedes revisar los comentarios colocados en tu citas medicas por tu medico tratante.</p>
+                        <a href="#" class="btn btn-green">Ver</a>
+                      </div>
+                    </div>
+              </div>
+              <!--contenedor derecha -->
+              <div class="col-4">
+                  <div class="card border-card">
+                      <img src="img/atencionCliente.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Calificar una cita medica</h5>
+                        <p class="card-text">Puedes asignarle una calificación a cualquiera de las citas que has tenido.</p>
+                        <a href="#" class="btn btn-green">Calificar</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div>
+          <div class="row">
+            <div class="col-5 offset-md-2">
+              <div class="img-text">
+                <img src="img/open.jpg" class="d-block w-100" alt="...">
+                <div class="text-in-img d-none d-md-block bg-blue p-3">
+                  <h4>Horarios de apertura</h4>
+                  <h6 class="fst-italic">Estamos para lo que necesite</h6>
+                  <p class="fw-semibold">Atención médica:</p>
+                  <p>Lunes a viernes de 8:00 a.m. a 6:00 p.m. </p>
+                  <p>Sábados de 9:00 a.m. a 1:00 p.m. </p>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <footer class="bg-secondary bg-gradient text-center text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3 text-white">
+        © 2022 Copyright:
+        <label>Gestión de pacientes</label>
+      </div>
+      <!-- Copyright -->
+    </footer>
 </body>
 </html>

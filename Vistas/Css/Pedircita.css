@@ -1,0 +1,39 @@
+@import "bootstrap";
+
+.form-control input,
+        .form-control select{
+            border: 1px solid  rgb(56,82,77);
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+            margin-left: 150px;
+             margin-right: 150px;
+        }
+
+.contenedor{
+            background-color:  rgb(254,254,251);
+            max-width: 900px;
+            margin: 100px auto;
+            padding: 50px 100px;
+            box-shadow: 2px 5px 10px rgb(56,82,77);
+        }
+.agendar{
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+
+}
+form{
+    max-width:inherit;
+    width: 95%;
+
+}
+.consultar{
+    text-align: center;
+}
+
+body{
+    background-color:  rgb(254,254,251);
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registroPaciente</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+</head>
+<body>
+        <!--Titulos-->
+        <h1 class="text-center py-3"><a href="Index.html" class="text-decoration-none text-blue">Clínica  San  Martín</a> </h1> 
+    <h3 class="text-center py-3">Registrarse</h3>
+    <hr class="border border-2 opacity-75 w-75 mx-auto mb-0">
+
+      <!--barra navegacion-->
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-body mb-5">
+        <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarsExample11">
+                <ul class="navbar-nav">
+                    <li class="nav-item" id="ModuloPacientes">
+                        <a class="nav-link" href="Index.html">Inicio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="row m-5"> 
+        <!--contenedor izquierda -->
+        <div class="col-4">
+            <div class="card border-card">
+                <img src="img/registro1.jpg" class="card-img-top" alt="..." height="500">
+                <div class="card-body">
+                    <h5 class="card-title">Medicina general  </h5>
+                </div>
+            </div>
+        </div>
+        <!--contenedor centro -->
+        <div class="col-4">
+            <div class="card border-card">
+                <div class="card-body">
+                    <!--formulario -->
+                    <form role="form" method="get" action="/Vistas/BaseDatos.html">   
+                        <div class="form-group">
+                            <fieldset>
+                                <legend class="card-title" >Ingrese sus datos </legend>
+                                <label for="">Nombre</label>
+                                    <input type="text" class="form-control" name="txtNombre" id="nombre"
+                                    placeholder="Su nombre">
+                                <label for="" >Apellido</label>
+                                    <input type="text" name="txtApellido" class="form-control" id="apellido"
+                                    placeholder="Sus apellidos">
+                                <label for="" >Identificacion</label>
+                                    <input type="text" name="txtCedulao" class="form-control" id="cedula"
+                                    placeholder="Su numero de identificacion">
+                                
+                                <label for="" >EPS</label>
+                                <select class="form-select" name="txtEps" size="6" >
+                                    <option value="">Seleccione su EPS...</option>
+                                    <option value="San">EPS SANITAS</option>
+                                    <option value="SalTot">SALUD TOTAL EPS S.A.</option>
+                                    <option value="Nva">NUEVA EPS </option>
+                                    <option value="Fam">FAMISANAR </option>
+                                    <option value="Sura">EPS SURA</option>
+                                </select>    
+                                <div class="form-group">
+                                    <label for="email_1">Escriba su email como Nombre de Usuario</label>
+                                    <input type="email" class="form-control" id="email_1"
+                                          placeholder="Introduce tu email ">
+                                  </div>
+                                  
+                                  <div class="form-group">
+                                    <label for="password_1">Cree contraseña de 6 caracteres que incluya al menos una mayuscula y un digito</label>
+                                    <input type="password" class="form-control" id="password_1"
+                                          placeholder="Contraseña">
+                                  </div>
+                                <input type="checkbox" class="card-body" name="Chk_datos" id="acepto">
+                                <span class="card-body"> Declaro haber leído y acepto las 
+                                    politicas y normativa sobre protección de datos</span>
+                            </fieldset>
+                            
+                        </div>
+                        <br>
+                        <div class="d-grid gap-5 d-md-flex justify-content-md-end">
+                            <button type="submit" class="btn btn-green" href="#">Enviar</button>
+                            <button type="button" class="btn btn-blue" href="#">Cancelar</button>
+                        </div>
+                    </form>  
+                      
+                </div>
+            </div>
+            
+        </div>
+        <!--contenedor derecha -->
+        <div class="col-4">
+            <div class="card border-card">
+                <img src="img/registro2.jpg" class="card-img-top" alt="..." height="500">
+                <div class="card-body">
+                    <h5 class="card-title">Medicos especialistas</h5>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <footer class="bg-secondary bg-gradient text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3 text-white">
+          © 2022 Copyright:
+          <label>Gestión de pacientes</label>
+        </div>
+        <!-- Copyright -->
+      </footer>
+</body>
+</html>
