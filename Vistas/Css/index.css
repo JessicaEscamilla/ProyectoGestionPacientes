@@ -93,3 +93,11 @@ body{
 label{
     margin-top: 10px;
 }
+
+.nav-link {
+    padding-right: 15px !important;
+}
+
+.text-blue{
+    color: rgb(10,74,110) !important;
+}
